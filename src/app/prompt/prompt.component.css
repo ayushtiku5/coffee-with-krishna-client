@@ -1,0 +1,14 @@
+.chat-input {
+    padding-top: 20px;
+    width: calc(100% - 48px);
+}
+
+.chat-footer-container {
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    right: 25px;
+    display: flex;
+    align-items: center;
+}
+

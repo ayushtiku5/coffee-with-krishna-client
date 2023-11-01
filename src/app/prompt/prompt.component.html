@@ -1,0 +1,13 @@
+<div class="chat-footer-container">
+    <mat-form-field class="chat-input">
+      <input
+        placeholder="Send a message"
+        matInput
+        [(ngModel)]="message"
+        (keyup.enter)="sendMessage(message)"
+      />
+    </mat-form-field>
+    <button mat-icon-button color="primary" (click)="sendMessage(message)">
+      <mat-icon>send</mat-icon>
+    </button>
+</div>

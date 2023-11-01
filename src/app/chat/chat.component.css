@@ -1,0 +1,25 @@
+.mat-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.chat-container {
+    overflow: auto;
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    right: 25px;
+    bottom: 120px;
+  }
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.title {
+  text-align: center;
+  color: #333;
+  padding: 20px;
+}

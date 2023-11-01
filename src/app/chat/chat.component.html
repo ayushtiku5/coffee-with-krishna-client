@@ -1,0 +1,34 @@
+<div class="title-container" *ngIf="messageService.getMessages().length === 0">
+    <h1 class="title">
+    Welcome to Coffee with Krishna! <br />
+    Get your questions answered by Lord Krishna himself. <br />
+    Write a text to start.
+    </h1>
+</div>
+<div #chats class="chat-container">
+    <div *ngFor="let message of messageService.getMessages()">
+        <mat-card class="mat-card">
+            <mat-card-header>
+                <img *ngIf="message.author === 'Krishna'" mat-card-avatar src="assets/avatar-krishna.jpg" alt="Photo of Krishna">
+                <img *ngIf="message.author === 'You'" mat-card-avatar src="assets/avatar-user.png" alt="Photo of User">
+                <mat-card-title>{{message.author}}</mat-card-title>
+            </mat-card-header>
+            <mat-card-footer>
+                <mat-card-content>{{message.content}}</mat-card-content>
+            </mat-card-footer>
+        </mat-card>
+        <br>
+    </div>
+    <div *ngIf="messageService.getMessages().length !== 0 && messageService.getMessages().at(-1)!.author === 'You'">
+        <mat-card class="mat-card">
+            <mat-card-header>
+                <img mat-card-avatar src="assets/avatar-krishna.jpg" alt="Photo of Krishna">
+                <mat-card-title>Krishna</mat-card-title>
+            </mat-card-header>
+            <mat-card-footer>
+                <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+            </mat-card-footer>
+        </mat-card>
+        <br>
+    </div>
+</div>
