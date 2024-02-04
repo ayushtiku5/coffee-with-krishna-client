@@ -6,6 +6,6 @@ import { AfterViewChecked, AfterViewInit, Component, ElementRef, ViewChild } fro
   styleUrls: ['./app.component.css']
 })
 export class AppComponent  {
-  title = 'coffee-with-krishna';
+  title = 'koffee-with-krishna';
   
 }

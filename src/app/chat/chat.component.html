@@ -1,9 +1,12 @@
 <div class="title-container" *ngIf="messageService.getMessages().length === 0">
-    <h1 class="title">
-    Welcome to Coffee with Krishna! <br />
-    Get your questions answered by Lord Krishna himself. <br />
-    Write a text to start.
-    </h1>
+    <div class="content">
+        <h1 class="title">
+            Welcome to Koffee with Krishna! <br />
+            Get your questions answered by Lord Krishna himself. <br />
+            Write a text to start.
+        </h1>
+    </div>
+    <div class="by-text">By Ayush Jain</div>
 </div>
 <div #chats class="chat-container">
     <div *ngFor="let message of messageService.getMessages()">

@@ -15,7 +15,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column; /* This makes the flex items align vertically */
   height: 100%;
+}
+
+.by-text {
+    color: grey;
+    align-self: center; /* This centers the text horizontally */
 }
 
 .title {
